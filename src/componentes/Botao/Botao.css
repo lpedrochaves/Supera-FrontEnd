@@ -1,0 +1,16 @@
+
+
+.botao {
+    background-color: rgba(128, 128, 128, 0.288);
+    font-weight: 600;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .botao:hover {
+    background-color: aliceblue;
+  }

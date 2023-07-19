@@ -1,0 +1,96 @@
+
+.section-formulario {
+  display: grid;
+  grid-template-rows: 1fr auto; 
+  min-height: 700px; 
+  margin: 40px 0;
+}
+
+.formulario {
+  max-width: 100%;
+  display: grid;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.div-campo-texto {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.div-botao {
+  display: flex;
+  justify-self: end;
+}
+
+.div-cabecalho-tabela {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.tr-saldo {
+  font-size: 20px;
+  font-weight: 700;
+  border: solid 2px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 100%;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.tr-titulo {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  border: solid 1px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.tr-titulo-cabecalho {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  border: solid 1px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.td-saldo {
+  padding: 5px;
+}
+
+.td-titulo {
+  border: solid 1px;
+  padding: 5px;
+}
+
+/* Adicione estilos para tornar a tabela mais responsiva em telas menores */
+@media (max-width: 768px) {
+  .div-campo-texto {
+    grid-template-columns: 1fr;
+  }
+
+  .formulario {
+    padding: 16px;
+  }
+
+  .div-botao {
+    justify-self: center;
+    margin-top: 16px;
+  }
+}
